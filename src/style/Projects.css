@@ -1,0 +1,67 @@
+.projects {
+  padding: 80px;
+}
+
+.projects-list-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.projects .projects-list {
+  width: max-content;
+  padding: 50px 0px;
+  display: flex;
+}
+
+.projects .projects-list .project-wrapper {
+  width: 300px;
+  display: inline-block;
+  padding-right: 60px;
+}
+
+.projects .projects-list .project-wrapper .project-title {
+  text-align: left;
+  text-transform: lowercase;
+  font-size: 28px;
+}
+
+.projects .projects-list .project {
+  border: 1px solid #707070;
+  border-radius: 30px;
+  display: block;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.projects .projects-list .project .project-image-wrapper {
+  height: 200px;
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.projects .projects-list .project .project-image-wrapper:hover .project-image {
+  filter: grayscale(0%);
+}
+
+.projects .projects-list .project .project-image {
+  max-height: max-content;
+  filter: grayscale(100%);
+  width: 80%;
+  transition: all 500ms;
+}
+
+.projects .projects-list .project .project-brief {
+  border-top: 1px solid #707070;
+  padding: 5px 20px;
+  height: 100px;
+  flex: none;
+}
+
+.projects .projects-list .project .project-brief .project-description {
+  text-align: left;
+  font-size: 15px;
+  line-height: 20px;
+}

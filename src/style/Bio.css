@@ -1,0 +1,53 @@
+.bio {
+  width: 100%;
+  display: flex;
+  padding-left: 40px;
+  position: relative;
+}
+
+.bio .react-logo-background {
+  position: absolute;
+  height: 140%;
+  width: 140%;
+  right: 0;
+  z-index: 1;
+  right: -50%;
+  top: -65%;
+  animation: rotate 10s infinite linear;
+}
+
+.bio .bio-text {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.bio .bio-text p {
+  padding-bottom: 40px;
+}
+
+.bio .bio-text .bio-name {
+  font-size: 50px;
+  z-index: 2;
+}
+
+.bio .bio-pic {
+  flex: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 2;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

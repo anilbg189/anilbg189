@@ -1,0 +1,9 @@
+.outline-header {
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white; */
+  text-shadow: -1px -1px 0 #707070, 1px -1px 0 #707070, -1px 1px 0 #707070,
+    1px 1px 0 #707070;
+  color: #171717;
+  font-size: 120px;
+  width: fit-content;
+}

@@ -1,0 +1,13 @@
+.about {
+  padding: 80px;
+  text-align: left;
+  position: relative;
+}
+
+.about p {
+  position: relative;
+  line-height: 30px;
+  top: -47px;
+  left: 132px;
+  max-width: 800px;
+}
