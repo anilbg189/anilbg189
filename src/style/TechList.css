@@ -10,6 +10,8 @@
 
 .tech-list .tech-skills {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tech-list .tech-skills:hover .tech-skill .tech-skill-image {
@@ -17,16 +19,20 @@
 }
 
 .tech-list .tech-skills .tech-skill {
-  padding: 5px 40px;
+  padding: 10px 20px;
+  border: 3px solid #da0037;
+  border-radius: 40px;
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
 }
 
 .tech-list .tech-skills .tech-skill .tech-skill-image {
-  height: 45px;
+  height: 40px;
   filter: grayscale(60%);
   transition: all 200ms;
 }
 
 .tech-list .tech-skills .tech-skill .tech-skill-name {
   color: #707070;
-  margin-top: 5px;
 }

@@ -1,9 +1,6 @@
-import { useEffect, useState, useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
+import React from "react";
 import OutlineHeader from "../common/OutlineHeader";
 import TechList from "./tech-list";
-
 import JSLogo from "../../static/skills/core/js.png";
 import HTMLLogo from "../../static/skills/core/html.png";
 import CSSLogo from "../../static/skills/core/css.png";
@@ -97,64 +94,16 @@ const skills = {
 };
 
 const Skills = () => {
-  const [skillsState, setskillsState] = useState([]);
-  const container = useRef();
-
-  useGSAP(
-    () => {
-      gsap.from("#skills-header", {
-        opacity: 0,
-        duration: 0.5,
-        x: -100,
-        scrollTrigger: {
-          trigger: "#skills-header",
-          // markers: true,
-          start: "top 70%",
-          // pin: true,
-        },
-      });
-
-      gsap.from(".tech-skill", {
-        opacity: 0,
-        scale: 1.5,
-        stagger: 0.2,
-        ease: "none",
-
-        scrollTrigger: {
-          trigger: ".skills",
-          start: "top top",
-          endTrigger: ".skills",
-          end: "bottom top",
-          scrub: 1,
-          pin: true,
-        },
-      });
-    },
-    { scope: container, dependencies: [skillsState], revertOnUpdate: true }
-  );
-
-  useEffect(() => {
-    const temp = [];
-
-    for (const key in skills) {
-      if (Object.hasOwnProperty.call(skills, key)) {
-        const skillsList = skills[key];
-        temp.push(...skillsList);
-      }
-    }
-    setskillsState(temp);
-  }, []);
-
   return (
-    <div ref={container} className="skills-wrapper">
-      <div className="skills" id="skills-header">
-        <OutlineHeader
-          text="<Skills />"
-          style={{ width: "100%", textAlign: "right" }}
-        />
-        <div className="skills-list">
-          <TechList skills={skillsState} />
-        </div>
+    <div className="skills">
+      <OutlineHeader
+        text="<Skills />"
+        style={{ width: "100%", textAlign: "right" }}
+      />
+      <div className="skills-list">
+        <TechList title="Core" skills={skills.core} />
+        <TechList title="Libraries / Frameworks" skills={skills.libraries} />
+        <TechList title="Others" skills={skills.others} />
       </div>
     </div>
   );

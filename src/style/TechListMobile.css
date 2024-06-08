@@ -1,0 +1,32 @@
+.tech-list-mobile {
+  padding-bottom: 15px;
+}
+
+.tech-list-mobile .tech-list-title {
+  font-size: 20px;
+  text-align: left;
+  color: #a1a1a1;
+}
+
+.tech-list-mobile .tech-skills {
+  display: flex;
+}
+
+.tech-list-mobile .tech-skills:hover .tech-skill .tech-skill-image {
+  filter: grayscale(0%);
+}
+
+.tech-list-mobile .tech-skills .tech-skill {
+  padding: 5px 40px;
+}
+
+.tech-list-mobile .tech-skills .tech-skill .tech-skill-image {
+  height: 45px;
+  filter: grayscale(60%);
+  transition: all 200ms;
+}
+
+.tech-list-mobile .tech-skills .tech-skill .tech-skill-name {
+  color: #707070;
+  margin-top: 5px;
+}

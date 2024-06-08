@@ -23,10 +23,19 @@
   text-align: left;
   flex-direction: column;
   z-index: 2;
+  padding-left: 40px;
+}
+
+.bio .bio-text .bio-media-link img {
+  padding-right: 30px;
+}
+
+.bio .bio-text .lets-talk {
+  margin-bottom: 40px;
 }
 
 .bio .bio-text p {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .bio .bio-text .bio-name {

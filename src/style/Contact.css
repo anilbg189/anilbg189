@@ -2,6 +2,39 @@
   padding: 100px;
 }
 
+.contact .contacted-fallback {
+  border: 1px solid #da0037;
+  position: fixed;
+  top: 20px;
+  left: 10%;
+  width: 80%;
+  border-radius: 40px;
+  background-color: #171717;
+  transition: all 500ms;
+}
+
+.contact .contact-details-wrapper {
+  display: flex;
+}
+
+.contact .feedback-visible {
+  opacity: 1;
+}
+
+.contact .feedback-hidden {
+  opacity: 0;
+}
+
+.contact .my-contact-details {
+  width: 50%;
+  text-align: left;
+}
+
+.contact .my-contact-details div {
+  padding-left: 100px;
+  padding-top: 30px;
+}
+
 .contact .contact-form {
   display: flex;
   flex-direction: column;

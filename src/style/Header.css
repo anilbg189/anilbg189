@@ -1,17 +1,28 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 40px;
   align-items: center;
 }
 
 header ul {
+  z-index: 2;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 5px;
+  border: 2px solid #da0037;
+  border-radius: 40px;
+  margin-right: 20px;
 }
 
 header ul li {
   list-style: none;
-  padding: 0 30px;
+  padding: 6px 16px;
+  cursor: pointer;
+  /* padding: 12px 22px; */
+}
+
+header ul .selected-link {
+  background-color: #0f0f0f;
+  border-radius: 40px;
 }
