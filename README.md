@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @anilbg189
 - 👀 I’m interested in web development using React JS
-- 🌱 I’m currently learning react-native
+- 🌱 I’m currently docker and kubernetes
 - 💞️ I’m looking to collaborate on web development projects
 - 📫 How to reach me - anilbg189@gmail.com
 
